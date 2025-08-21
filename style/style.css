@@ -3,10 +3,9 @@
     margin: 0;
     padding: 0;
 }
-/* header > .logo > img {
-    width: 150px;
-} */
-
+nav img {
+    cursor: text;
+}
 header nav {
     display: flex;
     padding: 15px;
@@ -17,9 +16,11 @@ header nav {
 nav li {
     display: inline;
     margin-right: 30px;
+    font-size: 17px;
 }
 nav li a {
     text-decoration: none;
+    padding: 8px;
 }
 nav li a:hover {
     background: lightgray;
@@ -30,7 +31,7 @@ nav li a:hover {
 nav .btn-head .btn {
     padding: 12px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 16px;
     background: rgba(82, 195, 3, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
@@ -39,6 +40,7 @@ nav .btn-head .btn:hover {
     background: blue;
     color: white;
     transition: 0.3s;
+    cursor: pointer;
 }
 #hero {
     height: 615px;
@@ -105,14 +107,10 @@ nav .btn-head .btn:hover {
     text-align: center;
 }
 
-.hero-content .btn :hover {
+/* #hero .hero-content .btn-container:hover .btn {
     background: blue;
     color: white;
-}
-#hero .hero-content .btn-container:hover .btn {
-    background: blue;
-    color: white;
-}
+} */
 #card-box {
     width: 884px;
     margin: 100px auto;
@@ -231,10 +229,15 @@ nav .btn-head .btn:hover {
     padding: 5px 7px;
     color: blue;
     background: lightgray;
-    border: 1px solid black;
-    border-radius: 5px;
+    /* border: 1px solid black;
+    border-radius: 5px; */
+    display: block;
 }
 .top .last .btn a :hover {
     background-color: rgb(255, 254, 254);
     color: black;
+}
+.btn-container .hero-btn:hover {
+    background: blue !important;
+    color: white !important;
 }
