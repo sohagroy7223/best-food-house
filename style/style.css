@@ -3,6 +3,43 @@
     margin: 0;
     padding: 0;
 }
+/* header > .logo > img {
+    width: 150px;
+} */
+
+header nav {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+nav li {
+    display: inline;
+    margin-right: 30px;
+}
+nav li a {
+    text-decoration: none;
+}
+nav li a:hover {
+    background: lightgray;
+    color: black;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+nav .btn-head .btn {
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: rgba(82, 195, 3, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+}
+nav .btn-head .btn:hover {
+    background: blue;
+    color: white;
+    transition: 0.3s;
+}
 #hero {
     height: 615px;
     background: rgba(255, 255, 255, 1);
@@ -61,7 +98,7 @@
     border: none;
     border-radius: 8px;
     background: rgba(82, 195, 3, 1);
-    transition: 0.1s;
+    transition: 0.2s;
     cursor: pointer;
 }
 .btn-container {
@@ -144,4 +181,60 @@
     background: blue;
     color: white;
     cursor: pointer;
+}
+.top {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.top .image img {
+    width: 430px;
+    height: 239px;
+}
+.top .text {
+    color: rgba(16, 16, 16, 1);
+    width: 500px;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.top .know {
+    color: rgba(16, 16, 16, 1);
+
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.6;
+}
+.top .follow {
+    color: rgba(16, 16, 16, 1);
+
+    font-family: Work Sans;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.7;
+}
+.top .last {
+    display: block;
+}
+.top .last .btn a {
+    padding: 5px 7px;
+    color: blue;
+    background: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.top .last .btn a :hover {
+    background-color: rgb(255, 254, 254);
+    color: black;
 }
